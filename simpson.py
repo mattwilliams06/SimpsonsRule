@@ -6,8 +6,7 @@ class Simpson:
      that can be solved with Simpson's Rule.
     """
 
-
-    def first_rule(self, offsets, LBP, uneven_spacing=False, spacing_array=[]):
+    def first_rule(self, offsets, lbp, uneven_spacing=False, spacing_array=None):
         """ Calculate definite integrals using Simpson's first rule. Requires an odd number of stations.
         If the spacing between arrays is not constant, the user must set the uneven_spacing flag to True, and pass
         a spacing array.
@@ -34,7 +33,7 @@ class Simpson:
         """
 
         if uneven_spacing:
-            area = self.first_rule_uneven_spacing(offsets, LBP, spacing_array)
+            area = self.first_rule_uneven_spacing(offsets, lbp, spacing_array)
             return area
 
         n_stations = len(offsets)
@@ -43,7 +42,7 @@ class Simpson:
             return None
 
         n_intervals = n_stations - 1
-        dx = LBP / n_intervals
+        dx = lbp / n_intervals
         multipliers = np.array([1, 4, 1])
         n_rows = n_intervals // 2
         mult_array = np.zeros((n_rows, n_stations))
@@ -55,7 +54,7 @@ class Simpson:
 
         return area
 
-    def first_rule_uneven_spacing(self, offsets, LBP, spacing_array):
+    def first_rule_uneven_spacing(self, offsets, lbp, spacing_array):
         """ This method is invoked if there is non-constant spacing between stations. It does not need to be called
         directly. It will be invoked if the flag uneven_spacing is set to True.
         """
@@ -66,7 +65,7 @@ class Simpson:
             return None
 
         n_intervals = n_stations - 1
-        dx = LBP / n_intervals
+        dx = lbp / n_intervals
         multipliers = np.array([1, 4, 1])
         n_rows = n_intervals // 2
         mult_array = np.zeros((n_rows, n_stations))
@@ -75,15 +74,32 @@ class Simpson:
                 mult_array[i, 2 * i + j] = multipliers[j] * spacing_array[i]
         mults = np.sum(mult_array, axis=0)
         area = dx / 3 * np.sum(mults * offsets)
+        self.waterplane_area = area * 2
 
         return area
 
-    def second_rule(self, offsets, LBP):
+    def second_rule(self, offsets, lbp):
         """ This method if for using Simpson's Second rule. The constraint is that the number of stations - 1 must
         be divisible by 3
         """
 
         n_stations = len(offsets)
+        n_intervals = n_stations - 1
+        if n_intervals % 3 != 0:
+            print('The number of intervals must be divisible by 3. Please select a different rule.')
+            return None
+
+        multipliers = np.array([1., 3., 3., 1.])
+        dx = lbp / n_intervals
+        n_rows = n_intervals // 3
+        mult_array = np.zeros((n_rows, n_stations))
+        for row in range(n_rows):
+            for col in range(4):
+                mult_array[row, 3 * col + col] = multipliers[col]
+        mults = np.sum(mult_array, axis=0)
+        area = (dx * 3 / 8) * mults * offsets
+
+        return area
 
 
 
