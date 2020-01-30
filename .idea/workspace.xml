@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3b3d412-c7da-4fd9-b69d-84c4c3795382" name="Default Changelist" comment="" />
+    <list default="true" id="d3b3d412-c7da-4fd9-b69d-84c4c3795382" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpson.py" beforeDir="false" afterPath="$PROJECT_DIR$/simpson.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_simpson.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_simpson.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simpson.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+            <state relative-caret-position="-962">
+              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -22,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_simpson.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+            <state relative-caret-position="240">
+              <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -40,12 +45,15 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/__init__.py" />
-        <option value="$PROJECT_DIR$/test_simpson.py" />
         <option value="$PROJECT_DIR$/simpson.py" />
+        <option value="$PROJECT_DIR$/test_simpson.py" />
       </list>
     </option>
   </component>
@@ -55,6 +63,7 @@
     <option name="width" value="1400" />
     <option name="height" value="837" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -75,6 +84,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -89,7 +99,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_simpson.test_first_rule_uneven_spacing">
+  <component name="RunManager" selected="Python tests.pytest for test_simpson.test_first_rule">
     <configuration name="simpson" type="PythonConfigurationType" factoryName="Python">
       <module name="SimpsonsRule" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -143,8 +153,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_simpson.test_first_rule_uneven_spacing" />
         <item itemvalue="Python tests.pytest for test_simpson.test_first_rule" />
+        <item itemvalue="Python tests.pytest for test_simpson.test_first_rule_uneven_spacing" />
       </list>
     </recent_temporary>
   </component>
@@ -162,21 +172,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_simpson_test_first_rule - 2020.01.29 at 17h 26m 48s.xml">
-      <configuration name="pytest for test_simpson.test_first_rule" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_simpson_test_first_rule - 2020.01.29 at 17h 27m 59s.xml">
-      <configuration name="pytest for test_simpson.test_first_rule" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_simpson_test_first_rule - 2020.01.29 at 19h 32m 11s.xml">
-      <configuration name="pytest for test_simpson.test_first_rule" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_simpson_test_first_rule - 2020.01.29 at 19h 32m 34s.xml">
-      <configuration name="pytest for test_simpson.test_first_rule" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_simpson_test_first_rule - 2020.01.29 at 19h 33m 08s.xml">
-      <configuration name="pytest for test_simpson.test_first_rule" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_for_test_simpson_test_first_rule - 2020.01.30 at 08h 19m 52s.xml">
       <configuration name="pytest for test_simpson.test_first_rule" configurationId="tests" />
     </history-entry>
@@ -185,6 +180,27 @@
     </history-entry>
     <history-entry file="pytest_for_test_simpson_test_first_rule_uneven_spacing - 2020.01.30 at 08h 20m 13s.xml">
       <configuration name="pytest for test_simpson.test_first_rule_uneven_spacing" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_simpson_test_first_rule - 2020.01.30 at 14h 05m 00s.xml">
+      <configuration name="pytest for test_simpson.test_first_rule" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_simpson_test_first_rule - 2020.01.30 at 14h 06m 18s.xml">
+      <configuration name="pytest for test_simpson.test_first_rule" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_simpson_test_first_rule - 2020.01.30 at 14h 07m 13s.xml">
+      <configuration name="pytest for test_simpson.test_first_rule" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_simpson_test_first_rule - 2020.01.30 at 14h 08m 06s.xml">
+      <configuration name="pytest for test_simpson.test_first_rule" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_simpson_test_first_rule_uneven_spacing - 2020.01.30 at 14h 08m 49s.xml">
+      <configuration name="pytest for test_simpson.test_first_rule_uneven_spacing" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_simpson_test_first_rule - 2020.01.30 at 14h 08m 54s.xml">
+      <configuration name="pytest for test_simpson.test_first_rule" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_simpson_test_first_rule - 2020.01.30 at 14h 10m 02s.xml">
+      <configuration name="pytest for test_simpson.test_first_rule" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -204,7 +220,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32885906" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -236,8 +252,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_simpson.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        <state relative-caret-position="240">
+          <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
@@ -246,8 +262,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/simpson.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+        <state relative-caret-position="-962">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
