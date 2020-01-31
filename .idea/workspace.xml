@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3b3d412-c7da-4fd9-b69d-84c4c3795382" name="Default Changelist" comment="" />
+    <list default="true" id="d3b3d412-c7da-4fd9-b69d-84c4c3795382" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpson.py" beforeDir="false" afterPath="$PROJECT_DIR$/simpson.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simpson.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-578">
-              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            <state relative-caret-position="-422">
+              <caret line="37" column="77" selection-start-line="37" selection-start-column="77" selection-end-line="37" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -47,14 +50,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/__init__.py" />
-        <option value="$PROJECT_DIR$/simpson.py" />
         <option value="$PROJECT_DIR$/test_simpson.py" />
+        <option value="$PROJECT_DIR$/simpson.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="11" />
-    <option name="y" value="95" />
+    <option name="x" value="82" />
+    <option name="y" value="48" />
     <option name="width" value="1400" />
     <option name="height" value="837" />
   </component>
@@ -94,7 +97,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_simpson.test_first_rule">
+  <component name="RunManager" selected="Python tests.pytest for test_simpson.test_first_rule_uneven_spacing">
     <configuration name="simpson" type="PythonConfigurationType" factoryName="Python">
       <module name="SimpsonsRule" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,8 +151,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_simpson.test_first_rule" />
         <item itemvalue="Python tests.pytest for test_simpson.test_first_rule_uneven_spacing" />
+        <item itemvalue="Python tests.pytest for test_simpson.test_first_rule" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +211,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="95" width="1400" height="837" extended-state="0" />
+    <frame x="82" y="48" width="1400" height="837" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24945612" />
@@ -216,7 +219,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32885906" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32885906" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -224,7 +227,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32885906" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32885906" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="10" visible="true" weight="0.32885906" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -257,8 +260,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/simpson.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-578">
-          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        <state relative-caret-position="-422">
+          <caret line="37" column="77" selection-start-line="37" selection-start-column="77" selection-end-line="37" selection-end-column="77" />
         </state>
       </provider>
     </entry>

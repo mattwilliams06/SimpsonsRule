@@ -11,7 +11,7 @@ WORKDIR /home/appuser
 USER appuser
 
 
-COPY simpson.py
+COPY simpson.py .
 
 
-CMD[ "python", "./simpson.py"]
+CMD [ "python", "./simpson.py"]

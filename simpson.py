@@ -6,6 +6,10 @@ class Simpson:
      that can be solved with Simpson's Rule.
     """
 
+    def __init__(self):
+        self.lcf = 0.
+        self.waterplane_area = 0.
+
     def first_rule(self, offsets, lbp, uneven_spacing=False, spacing_array=None):
         """ Calculate definite integrals using Simpson's first rule. Requires an odd number of stations.
         If the spacing between arrays is not constant, the user must set the uneven_spacing flag to True, and pass
@@ -30,6 +34,9 @@ class Simpson:
         The area under the curve/offsets. For ship applications, the result must be doubled if the offsets are from
         centerline.
 
+        LCF is a callable instance attribute, calculated during the call to first_rule. Use instance_name.lcf to access.
+        LCF is referenced from the same starting point as the input stations.
+
         """
 
         if uneven_spacing:
@@ -46,11 +53,19 @@ class Simpson:
         multipliers = np.array([1, 4, 1])
         n_rows = n_intervals // 2
         mult_array = np.zeros((n_rows, n_stations))
+
+        # Setting up lever arms to calculate moments and LCF
+        station_array = np.arange(n_stations)
+        levers = station_array * dx
+
         for i in range(n_rows):
             for j in range(3):
                 mult_array[i, 2*i + j] = multipliers[j]
         mults = np.sum(mult_array, axis=0)
+        moment = dx / 3 * np.sum(mults * levers * offsets)
         area = dx / 3 * np.sum(mults * offsets)
+        self.lcf = moment / area
+        self.waterplane_area = area * 2
 
         return area
 
@@ -69,6 +84,7 @@ class Simpson:
         multipliers = np.array([1, 4, 1])
         n_rows = n_intervals // 2
         mult_array = np.zeros((n_rows, n_stations))
+
         for i in range(n_rows):
             for j in range(3):
                 mult_array[i, 2 * i + j] = multipliers[j] * spacing_array[i]
@@ -100,7 +116,6 @@ class Simpson:
         area = (dx * 3 / 8) * mults * offsets
 
         return area
-
 
 
 
